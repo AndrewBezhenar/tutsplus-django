@@ -22,8 +22,6 @@ def top_stories(top=180, consider=1000):
 
 
 def index(request):
-    stories = top_stories(top=30)
-    context = RequestContext(request, {
-    	'stories': stories
-    	})
-    return render_to_response('stories/index.html', context)
+    stories = top_stories(top=30)    
+    return render_to_response('stories/index.html', {'stories' : stories},
+    	context_instance=RequestContext(request))
