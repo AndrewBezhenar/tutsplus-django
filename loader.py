@@ -26,7 +26,7 @@ HACKER_NEWS_API_STORY_URL = 'https://hacker-news.firebaseio.com/v0/item/%d.json'
 RETRY_ATTEMPTS = 3
 
 # TODO: change the username to your username
-USERNAME='croach'
+USERNAME='andrew'
 
 def get_data(api_url):
     for i in range(RETRY_ATTEMPTS + 1):
